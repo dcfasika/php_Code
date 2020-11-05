@@ -7,7 +7,7 @@ print_r($data);
 
 foreach($data as $key => $val) {
 
-$newval = explode(':',trim($val, 'STRING'));
+$newval = explode(':',trim($val, 'STRING: '));
 $newkey = explode('.',trim($key, 'ETRA-VRTR-MIB::IfName'));
 $data[$key] = $newval;
 }
