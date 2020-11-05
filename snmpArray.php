@@ -8,8 +8,11 @@ print_r($data);
 foreach($data as $key => $val) {
 
 $newval = explode(':',trim($val, 'STRING: '));
-$newkey = explode(' ',trim($key, 'ETRA-VRTR-MIB::IfName.]'));
+$newkey = explode(' ',trim($key, '[ETRA-VRTR-MIB::IfName.]'));
+echo '<pre>';
+print_r($newkey);
 $data[$key] = $newval;
+
 }
 print_r($data);
 
